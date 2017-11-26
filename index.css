@@ -1,0 +1,572 @@
+/* stylelint-disable indentation,selector-no-id*/
+
+body
+{
+    margin-top: -19px;
+    font: 81.25% Arial, Helvetica, sans-serif;
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 260px 46% 197px 151px 175px;
+    grid-template-areas: 'location title title settings login'
+    'nav geo promo none aside' 'nav news promo none aside'
+    'nav change promo none aside'
+    'nav change promo none aside'
+    'nav link link none aside'
+    'yandex search search button aside'
+    'yandex hint hint button aside'
+    'yandex adv adv button aside'
+    'yandex tools tools tools aside';
+    height: fit-content;
+    line-height: 42px;
+    margin-top: 20px;
+}
+
+.geolocation
+{
+    color: #77868d;
+    opacity: .5;
+    grid-area: location;
+    margin-left: 18px;
+}
+
+.arrow
+{
+    height: 13px;
+    margin-right: 3px;
+}
+
+.settings
+{
+    grid-area: settings;
+    text-align: center;
+}
+
+.login
+{
+    grid-area: login;
+    width: 93px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    padding-left: 19px;
+    margin-top: 13px;
+}
+
+.username
+{
+    font-weight: bold;
+}
+
+.username:first-letter
+{
+    color: #f00;
+}
+
+.mail
+{
+    margin-top: -34px;
+}
+
+.news
+{
+    margin-right: 20px;
+    grid-area: news;
+}
+
+.news-list
+{
+    line-height: 13px;
+    display: list-item;
+    text-align: start;
+}
+
+.news-head
+{
+    grid-area: geo;
+    line-height: 13px;
+    font-weight: 400;
+    font-size: 138.5%;
+}
+
+.date
+{
+    margin-top: 20px;
+    color: #77868d;
+    opacity: .6;
+    font-size: small;
+}
+
+a
+{
+    text-decoration: none;
+    margin-right: 5px;
+    color: #0054b9;
+}
+
+a:active,
+a:hover,
+label:hover
+{
+    color: #c00 !important;
+}
+
+a[href='#geo']
+{
+    color: #6da2e1;
+    display: inline-block;
+}
+
+.promo
+{
+    grid-area: promo;
+    line-height: normal;
+}
+
+h1
+{
+    font-size: 138.5%;
+    font-weight: 400;
+    padding-right: 5px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.change
+{
+    grid-area: change;
+    display: -webkit-box;
+}
+
+.change-value
+{
+    margin-top: -12px;
+    font-weight: 700;
+    font-size: 92.3%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+span
+{
+    font-weight: normal;
+}
+
+.change-off
+{
+    color: #999;
+}
+
+.change-off::after
+{
+    content: '%';
+}
+
+.search
+{
+    grid-area: search;
+}
+
+input[placeholder='Яндекс - найдется все!']
+{
+    width: 100%;
+    border: solid #ffdb4d;
+    height: 31px;
+    display: inline-block;
+    outline: none;
+}
+
+.button > button
+{
+    margin: 6px 51px 5px 0;
+    border: 0;
+    background: #ffdb4d;
+    font-size: 16px;
+    height: 31px;
+    width: 88px;
+}
+
+.button
+{
+    grid-area: button;
+    margin-top: -1px;
+}
+
+.button::after
+{
+    content: '▶';
+    color: #ffdb4d;
+    font-size: 39px;
+    position: absolute;
+    margin-left: -55px;
+    margin-top: 1px;
+    z-index: -1;
+}
+
+.yandex
+{
+    grid-area: yandex;
+    height: 114px;
+    content: url('yandex.webp');
+    margin-top: -40px;
+    margin-left: 94px;
+}
+
+.links
+{
+    grid-area: link;
+    line-height: normal;
+    font-size: 1.16em;
+    display: inline-table;
+}
+
+a[href='#a']
+{
+    margin-right: 42px;
+}
+
+img[src*='key']
+{
+    margin-top: -28px;
+    margin-right: 6px;
+    float: right;
+    position: relative;
+}
+
+img[src*='mic']
+{
+    float: right;
+    margin-right: 42px;
+}
+
+.in-bar
+{
+    z-index: 2;
+    margin-top: -32px;
+    opacity: .3;
+}
+
+.hint
+{
+    grid-area: hint;
+    margin-top: -25px;
+}
+
+.hint-aprove
+{
+    opacity: .5;
+}
+
+.not_adv
+{
+    grid-area: adv;
+}
+
+.not_adv > img
+{
+    width: 100%;
+}
+
+.tools
+{
+    display: grid;
+    grid-template-areas: 'left-top center-top right-top';
+    grid-area: tools;
+    grid-template-columns: auto;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+}
+
+.left-top
+{
+    grid-area: left-top;
+}
+
+.right-top
+{
+    grid-area: right-top;
+}
+
+.left-midle
+{
+    grid-area: left-midle;
+}
+
+.center-top
+{
+    grid-area: center-top;
+}
+
+.center-midle
+{
+    grid-area: center-midle;
+    margin-top: -43px;
+    padding-bottom: 15px;
+}
+
+.tv
+{
+    border-radius: 5px;
+    border: 0;
+    padding-bottom: 9px;
+    width: 101px;
+    background: #418af9 -webkit-linear-gradient(left, #00a3fa, #716ef8);
+    background-clip: padding-box;
+}
+
+.tv > span:after
+{
+    content: ' ▶';
+}
+
+.tv > span
+{
+    font-size: 14px;
+    color: #fff;
+}
+
+.come-block > a > span,
+.map > a
+{
+    font-weight: 700;
+}
+
+.map
+{
+    width: 222px;
+}
+
+.weather-block > a,
+.weather-block > .temperature
+{
+    display: inline-block;
+    color: #000;
+    line-height: 2.55;
+}
+
+.tv-block > a,
+.come-block > a
+{
+    display: -webkit-box;
+    color: #000;
+    line-height: 2.55;
+}
+
+.tv-block > a > span:nth-child(2)
+{
+    color: #999;
+    padding-left: 12px;
+}
+
+.tv-block > a > span:hover
+{
+    color: #c00;
+}
+
+.time:hover,
+.time
+{
+    padding-right: 3px;
+    color: #000;
+}
+
+.coma,
+.afisha > ul > li > span
+{
+    color: #999;
+}
+
+.auto
+{
+    overflow-y: auto;
+    display: inline-grid;
+    height: 209px;
+    line-height: 27px;
+}
+
+.auto::-webkit-scrollbar
+{
+    width: 0;
+}
+
+.auto > a,
+.map > a,
+.afisha > ul > li > a,
+.news-list > a,
+.temperature
+{
+    color: #000;
+}
+
+.humor
+{
+    line-height: normal;
+    padding-bottom: 50px;
+}
+
+.right-midle
+{
+    grid-area: right-midle;
+}
+
+.lights
+{
+    background: url('lights.svg') no-repeat;
+    padding-left: 35px;
+    margin-left: 5px;
+    padding-top: 110px;
+    font-size: larger;
+}
+
+.jam
+{
+    width: max-content;
+}
+
+a[href*='concert']
+{
+    font-weight: 700;
+}
+
+.afisha > ul > li > a
+{
+    margin-right: 8px;
+    overflow: hidden;
+}
+
+ul
+{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 2;
+}
+
+.blur-top
+{
+    width: 270px;
+    height: 40px;
+    position: absolute;
+    background: -webkit-gradient(linear, left bottom, left top,
+    from(rgba(255, 255, 255, 0)),
+    to(rgba(255, 255, 255, 1)));
+    -webkit-transform: translateY(35px);
+    transform: translateY(35px);
+    margin-top: -34px;
+}
+
+.blur-bottom
+{
+    width: 270px;
+    height: 40px;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom,
+    from(rgba(255, 255, 255, 0)),
+    to(rgba(255, 255, 255, 1)));
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+    margin-top: -233px;
+}
+
+input#joke2:checked ~ .joke-text2,
+input#joke1:checked ~ .joke-text1
+{
+    visibility: visible;
+    display: inline;
+}
+
+.jokes,
+input,
+input#joke1:checked ~ .tools .left-top .joke-text2,
+input#joke2:checked ~ .tools .left-top .joke-text1,
+input#settings:not(:checked) ~ .settings .settings-menu
+{
+    display: none;
+}
+
+input#settings:checked ~ .settings-menu
+{
+    display: inline-block;
+}
+
+.settings-menu
+{
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    display: grid;
+    z-index: 5;
+    width: fit-content;
+    position: absolute;
+    line-height: 2.5;
+    background-color: #fff;
+    text-align: left;
+    padding-right: 10px;
+}
+
+label[for='come']:before,
+label[for='humor-block']:before,
+label[for='tv']:before,
+label[for='auto']:before,
+label[for='weather']:before,
+label[for='jam']:before,
+label[for='map']:before,
+label[for='afisha']:before
+{
+    display: inline-block;
+    width: 19px;
+    height: 15px;
+    padding-right: 5px;
+    content: '☑';
+}
+
+input[id='come']:not(:checked) ~ .settings label[for='come']:before,
+input[id='humor-block']:not(:checked) ~ .settings label[for*='humor']:before,
+input[id='tv']:not(:checked) ~ .settings label[for='tv']:before,
+input[id='auto']:not(:checked) ~ .settings label[for='auto']:before,
+input[id='weather']:not(:checked) ~ .settings label[for='weather']:before,
+input[id='jam']:not(:checked) ~ .settings label[for='jam']:before,
+input[id='map']:not(:checked) ~ .settings label[for='map']:before,
+input[id='afisha']:not(:checked) ~ .settings label[for='afisha']:before
+{
+    font-family: FontAwesome, fantasy;
+    content: '\f046';
+}
+
+label
+{
+    margin-left: 5px;
+}
+
+img[alt='weather']
+{
+    width: 27px;
+}
+
+.temperature
+{
+    display: initial;
+}
+
+.humor-block
+{
+    width: 233px;
+}
+
+input#come:not(:checked) ~ .tools .come-block,
+input#humor-block:not(:checked) ~ .tools .humor-block,
+input#tv:not(:checked) ~ .tools .tv-block,
+input#auto:not(:checked) ~ .tools .auto-block,
+input#weather:not(:checked) ~ .tools .weather-block,
+input#jam:not(:checked) ~ .tools .jam,
+input#map:not(:checked) ~ .tools .map,
+input#afisha:not(:checked) ~ .tools .afisha
+{
+    display: none;
+}
+
+button
+{
+    outline: none;
+}

@@ -3,7 +3,250 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet"
+          href="index.css">
 </head>
 <body>
+<main>
+    <input class="jokes joke1" id="joke1" name="jokes" type="radio" checked>
+    <input class="jokes joke2" id="joke2" name="jokes" type="radio">
+    <input class="settings-button" id="settings" name="settings" type="checkbox">
+    <input id="come" name="come" type="checkbox" checked>
+    <input id="humor-block" name="come" type="checkbox" checked>
+    <input id="tv" name="come" type="checkbox" checked>
+    <input id="auto" name="come" type="checkbox" checked>
+    <input id="weather" name="come" type="checkbox" checked>
+    <input id="jam" name="come" type="checkbox" checked>
+    <input id="map" name="come" type="checkbox" checked>
+    <input id="afisha" name="come" type="checkbox" checked>
+    <div class="geolocation">
+        <p><img class="arrow"
+                src="geoarrow.png"
+                title="arrow"
+                alt="arrow">Екатеринбург</p>
+    </div>
+    <div class="settings">
+        <label for="settings">Настройки</label>
+        <div class="settings-menu">
+            <label for="come">Посещаемое</label>
+            <label for="humor-block">Анекдоты</label>
+            <label for="tv">Телепрограммы</label>
+            <label for="auto">Автомоильные новости</label>
+            <label for="weather">Погода</label>
+            <label for="jam">Пробки</label>
+            <label for="map">Карта</label>
+            <label for="afisha">Афиша</label>
+        </div>
+    </div>
+    <div class="login">
+        <p class="username">Login</p>
+        <p class="mail">Почта 123</p>
+    </div>
+    <div class="news-head">
+        <a href="#all">Сейчас в СМИ</a>
+        <a href="#geo">В Екатернбурге</a>
+        <span class="date">17 ноября, пятница 17:49</span>
+    </div>
+    <div class="news">
+        <p class="news-list">
+            <a href="#news">Эрдоган обвинил США в финансировании террористов ИГ в Сирии</a>
+        </p>
+        <p class="news-list">
+            <a href="#news">9 СМИ получили от Минюста предупреждения о статусе иноагента</a>
+        </p>
+        <p class="news-list">
+            <a href="#news">Почему СБ ООН дал миссии по расследованию химатак в Сирии один день</a>
+        </p>
+        <p class="news-list">
+            <a href="#news">Умер французский актер из «Трех мушкетеров»</a>
+        </p>
+        <p class="news-list">
+            <a href="#news">«Грузовик будущего»: Илон Маск представил беспилотную электрофуру</a>
+        </p>
+    </div>
+    <div class="promo">
+        <img
+            src="promo.png"
+            width="120"
+            height="90"
+            alt="Элементы Яндекса">
+        <h1>
+            <a href="#">Красивые фоны
+                        для вашего браузера</a>
+        </h1>
+        <span>Элементы Яндекса</span>
+    </div>
+    <div class="change">
+        <p class="change-value">USD цб<span>8,5</span> <span class="change-off">-0,06</span></p>
+        <p class="change-value">EUR цб<span>12</span> <span class="change-off">-0,07</span></p>
+        <p class="change-value">bitcoin цб<span>7412</span> <span class="change-off">+43,07</span></p>
+    </div>
+    <div class="search">
+        <input class="input__control input__input"
+               autocomplete="off"
+               spellcheck="false"
+               id="text"
+               maxlength="400"
+               autofocus=""
+               name="text"
+               type="search"
+               placeholder="Яндекс - найдется все!">
+        <img class="in-bar"
+             alt="keyboard"
+             title="keyboard"
+             src="keyboard.svg">
+        <img class="in-bar"
+             alt="mic"
+             title="mic"
+             src="mic.svg">
+    </div>
+    <div class="button">
+        <button>Найти</button>
+    </div>
+    <div class="yandex">
+    </div>
+    <div class="links">
+        <a href="#a">Видео</a>
+        <a href="#a">Картинки</a>
+        <a href="#a">Погода</a>
+        <a href="#a">Игры</a>
+        <a href="#a">Новости</a>
+        <a href="#a">Маркет</a>
+        <a href="#a">Ритмы</a>
+        <a href="#a">еще</a>
+    </div>
+    <div class="hint">
+        <p>
+            Найдётся всё. Например, <span class="hint-aprove">российские мультфильмы</span>
+        </p>
+    </div>
+    <div class="not_adv">
+        <img src="ad.png"
+             alt="Егор Крид представляет новый смартфон OPPO F5 с технологией SelfieTune.
+              Старт продаж 25 ноября">
+    </div>
+    <div class="tools">
+        <div class="left-top">
+            <div class="come-block">
+                <h1>
+                    <a href="#g">Посещаемое</a>
+                </h1>
+                <a href="#p"><span>Маркет</span> — товары из Китая</a>
+                <a href="#p"><span>Авто.ру</span> — авто с подогревом</a>
+                <a href="#p"><span>Недвижимость</span> — новостройки с ипотекой</a>
+                <a href="#p"><span>Работа</span> — мойщик автомобилей</a>
+                <a href="#p"><span>Коллекции</span> — губная помада</a>
+                <a href="#p"><span>Деньги</span> — заплатить за телефон</a>
+                <a href="#p"><span>Здоровье</span> — врач на связи</a>
+            </div>
+            <div class="humor-block">
+                <h1>
+                    <a href="#a">Анекдоты</a>
+                </h1>
+                <div class="humor joke-text1">
+                    <span>Раздел <a href="#h">Шутейки за 300.</a></span>
+                    <div>
+                        <p>- Вы кто?</p>
+                        <p>- Я мужчина из ваших фантазий!</p>
+                        <p>- Хм... Почему один?</p>
+                    </div>
+                    <label for="joke2">↻ Показать еще</label>
+                </div>
+                <div class="humor joke-text2">
+                    <span>Раздел <a href="#h">Мдаа</a></span>
+                    <div>
+                        <p>Когда в первый раз услышала, как матерится наша отличница,
+                           захотелось облить ее святой водой.
+                        </p>
+                    </div>
+                    <label for="joke1">↻ Показать еще</label>
+                </div>
+            </div>
+        </div>
+        <div class="center-top">
+            <div class="tv-block">
+                <h1>
+                    <a href="#t">Телепрограмма</a>
+                    <button class="tv">
+                        <span>ТВ Онлайн</span>
+                    </button>
+                </h1>
+                <a href="#tv"><span class="time">18:00</span>
+                    След <span>Пятый канал</span></a>
+                <a href="#tv"><span class="time">18:00</span>
+                    Самые шокирующие… <span>РЕН ТВ</span></a>
+                <a href="#tv"><span class="time">18:00</span>
+                    Орел и решка <span>Четвертый канал + Пятница</span></a>
+                <a href="#tv"><span class="time">18:05</span>
+                    Женский доктор-2 <span>41 Домашний</span></a>
+                <a href="#tv"><span class="time">18:30</span>
+                    Сверхъестественный отбор <span>ТВ-3</span></a>
+                <a href="#tv"><span class="time">18:30</span>
+                    Реальные пацаны <span>ТНТ</span></a>
+            </div>
+            <div class="auto-block">
+                <h1>
+                    <a href="#a">Автомобильные новости</a>
+                </h1>
+                <div class="blur-top"></div>
+                <div class="auto">
+                    <a href="#p"><span>Маркет</span> — товары из Китая</a>
+                    <a href="#p"><span>Авто.ру</span> — авто с подогревом</a>
+                    <a href="#p"><span>Недвижимость</span> — новостройки с ипотекой</a>
+                    <a href="#p"><span>Работа</span> — мойщик автомобилей</a>
+                    <a href="#p"><span>Коллекции</span> — губная помада</a>
+                    <a href="#p"><span>Деньги</span> — заплатить за телефон</a>
+                    <a href="#p"><span>Здоровье</span> — врач на связи</a>
+                    <a href="#p"><span>Маркет</span> — товары из Китая</a>
+                    <a href="#p"><span>Авто.ру</span> — авто с подогревом</a>
+                    <a href="#p"><span>Недвижимость</span> — новостройки с ипотекой</a>
+                    <a href="#p"><span>Работа</span> — мойщик автомобилей</a>
+                    <a href="#p"><span>Коллекции</span> — губная помада</a>
+                    <a href="#p"><span>Деньги</span> — заплатить за телефон</a>
+                    <a href="#p"><span>Здоровье</span> — врач на связи</a>
+                </div>
+                <div class="blur-bottom"></div>
+            </div>
+        </div>
+        <div class="right-top">
+            <div class="weather-block">
+                <h1><a href="#w">Погода</a>
+                    <img alt="weather"
+                         title="weather"
+                         src="weather.svg">
+                    <a href="#temperature" class="temperature">-3 ℃</a>
+                </h1>
+                <a href="#w">Ночь −2</a><span class="coma">,</span><a href="#w">утро −2</a>
+            </div>
+            <div class="jam">
+                <h1>
+                    <a href="#a">Пробки <span class="lights"></span> 4 балла</a>
+                </h1>
+                <p>Местами затруднния</p>
+            </div>
+            <div class="map">
+                <h1>
+                    <a href="#m">Карта Екатеринбурга</a>
+                </h1>
+                <a href="#taxi">Такси</a>
+                <a href="#sched">Расписания</a>
+                <a href="#bus">Междугородные автобусы</a>
+            </div>
+            <div class="afisha">
+                <h1>
+                    <a href="#afisha">Афиша</a>
+                </h1>
+                <ul>
+                    <li><a href="#afisha">Тор: Рагнарёк</a><span>фэнтези</span></li>
+                    <li><a href="#afisha">Лига справедливости</a><span>фэнтези</span></li>
+                    <li><a href="#afisha">Последний богатырь</a><span>фэнтези</span></li>
+                    <li><a href="#afisha">Убийство в ночном</a><span>фэнтези</span></li>
+                    <li><a href="#afisha">Здравствуй, папа</a><span>фэнтези</span></li>
+                    <li><a href="#concert">Концерты</a>— <a href="#concert">Каста</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>
